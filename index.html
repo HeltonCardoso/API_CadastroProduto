@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h1>Cadastrar Produto</h1>
+      <form id="productForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" name="descricao" required>
+        <label for="preco">Preço:</label>
+        <input type="number" id="preco" name="preco" required>
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" required>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+
+    <div class="form-container">
+      <h1>Alterar Produto</h1>
+      <form id="updateForm">
+        <label for="produtoId">ID do Produto:</label>
+        <input type="number" id="produtoId" name="produtoId" required>
+        <label for="novoNome">Novo Nome:</label>
+        <input type="text" id="novoNome" name="novoNome">
+        <label for="novaDescricao">Nova Descrição:</label>
+        <input type="text" id="novaDescricao" name="novaDescricao">
+        <label for="novoPreco">Novo Preço:</label>
+        <input type="number" id="novoPreco" name="novoPreco">
+        <label for="novaQuantidade">Nova Quantidade:</label>
+        <input type="number" id="novaQuantidade" name="novaQuantidade">
+        <button type="submit">Alterar Produto</button>
+      </form>
+    </div>
+
+    <div class="form-container">
+      <h1>Remover Produto</h1>
+      <form id="removeForm">
+        <label for="produtoIdRemover">ID do Produto para Remover:</label>
+        <input type="number" id="produtoIdRemover" name="produtoIdRemover" required>
+        <button type="submit">Remover Produto</button>
+      </form>
+    </div>
+  </div>
+
+  <h1>Lista de Produtos</h1>
+  <button id="listarBtn">Listar Produtos</button>
+  <ul id="productList"></ul>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
